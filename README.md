@@ -3,7 +3,7 @@
 
 Para añadir un proyecto y trabajar en el, recomendaría clonar el repositorio de GitHub, y abrir la carpeta donde se clonó desde Unity Hub
 
-![[Pasted image 20250513153128.png]]
+![Imagen](<./Docs/Images/Pasted image 20250513153128.png>)
 
 Como referencia, el proyecto actual inició en la ***editor version*** **6000.0.33f1** 
 
@@ -15,14 +15,14 @@ La instalación del editor debe contar con los siguientes módulos para **builde
 	- OpenJDK
 	- Android SDK & NDK Tools
 
-![[Pasted image 20250513153338.png]]
-![[Pasted image 20250513153400.png]]
+![Imagen](<./Docs/Images/Pasted image 20250513153338.png>)
+![Imagen](<./Docs/Images/Pasted image 20250513153400.png>)
 
 Para descargar el proyecto, clona el repositorio siguiente en alguna carpeta vacía, o descárgalo como zip si no vas a usar git inmediatamente.
 
 Después de clonarlo, lo añadirás a los proyectos de unity hub en **Add project from disk**
 
-![[Pasted image 20250513155103.png]]
+![Imagen](<./Docs/Images/Pasted image 20250513155103.png>)
 
 Verás el proyecto abajo en la lista de proyectos, al abrirlo se instalarán los archivos locales faltantes.
 
@@ -42,16 +42,16 @@ Al iniciar el Play Mode se usará el dispositivo virtual para controlar el XR Or
 
 Primero, entra a Build Profiles:
 
-![[Pasted image 20250514130816.png]]
+![Imagen](<./Docs/Images/Pasted image 20250514130816.png>)
 
 Asegúrate que estas buildeando para Android.
 
 En Platform Settings > Run Device, asegúrate de tener conectado por cable el Oculus, y te aparecerá un identificador del Oculus al momento de abrir la lista desplegable. Lo seleccionas:
 
-![[Pasted image 20250514130902.png]]
+![Imagen](<./Docs/Images/Pasted image 20250514130902.png>)
 
 Al tenerlo conectado, sal y da clic en Build And Run.
 
-![[Pasted image 20250514131457.png]]
+![Imagen](<./Docs/Images/Pasted image 20250514131457.png>)
 
 **Por alguna razón, creo que no es posible buildear sin esta opción. Creo que solo con Build And Run lo descarga en el dispositivo seleccionado en Build Profiles**.

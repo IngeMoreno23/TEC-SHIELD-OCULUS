@@ -3,7 +3,7 @@
 
 Actualmente la escena simplemente tiene un panel mostrar el estado de la simulación y puedes interactuar con las esferas según la secuencia del juego.
 
-![[Pasted image 20250514125534.png]]
+![Imagen](<./Images/Pasted image 20250514125534.png>)
 
 La escena necesita un Menu para pausar, salir del juego. Y al acabar la secuencia, podría esperar un poco y regresar al menu principal.
 
@@ -11,7 +11,7 @@ Sobre los datos, necesita guardar los datos y serializarlos, esto puede ser en u
 
 La idea inicial era por cada juego, serializar una lista en un json de SelectionData, un struct dentro de GameManager1:
 
-![[Pasted image 20250514125826.png]]
+![Imagen](<./Images/Pasted image 20250514125826.png>)
 
 Con esta lista puedes generar una secuencia de acciones/inputs del usuario y después de analizarla, puedes obtener resultados. Las esferas correctas esta dada por `SelectionData.BallId < GameManager1.m_CorrectSphereCount`.
 

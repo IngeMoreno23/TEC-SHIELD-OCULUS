@@ -5,9 +5,9 @@ La mayoría de assets que están en *unity asset store* son del **built-in rende
 
 Si esto llega causar problemas para importar assets **color morado (no renderiza la textura por el Shader)**.
 
-![[Pasted image 20250513144427.png]]
+![Imagen](<./Images/Pasted image 20250513144427.png>)
 
-![[Pasted image 20250513144519.png]]
+![Imagen](<./Images/Pasted image 20250513144519.png>)
 
 # XR Interaction Toolkit
 
@@ -21,4 +21,4 @@ La referencia de la configuración es el siguiente video de youtube:
 
 https://www.youtube.com/watch?v=2KUliN2R2pQ
 
-![[Pasted image 20250513152610.png]]
+![Imagen](<./Images/Pasted image 20250513152610.png>)

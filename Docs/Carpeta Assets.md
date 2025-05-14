@@ -41,15 +41,15 @@ Ambos son herramientas del editor para crear un nuevo set de splines, se generan
 
 Un problema que tienen, es que los splines resultan en diferentes velocidades, porque a mayor longitud, y mismo tiempo para iniciar y acabar, resulta en velocidades desiguales entre los splines.
 
-![[Pasted image 20250513222858.png]]
+![Imagen](<./Images/Pasted image 20250513222858.png>)
 
 Para usarlo, necesitas ubicar la carpeta **SplineContainer** en jerarquía:
 
-![[Pasted image 20250513223216.png]]
+![Imagen](<./Images/Pasted image 20250513223216.png>)
 
 Necesita estar vacía y debes de arrastrarla a la ventana del Spline Batch Creator:
 
-![[Pasted image 20250513223327.png]]
+![Imagen](<./Images/Pasted image 20250513223327.png>)
 
 ## UIGamePanel
 
