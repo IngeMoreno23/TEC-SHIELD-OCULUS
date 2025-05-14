@@ -1,0 +1,33 @@
+.expandable-container {
+    width: 100%;
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.3s;
+}
+
+.header {
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgb(80, 80, 80);
+}
+
+.header-label {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+.toggle-button {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.content-container {
+    padding: 10px;
+}

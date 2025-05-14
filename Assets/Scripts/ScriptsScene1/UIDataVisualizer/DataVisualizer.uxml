@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="GameResult" src="project://database/Assets/Scripts/ScriptsScene1/UIDataVisualizer/Containers/GameResult.uxml?fileID=9197481963319205126&amp;guid=66dabc8909d3e4949806e42832788535&amp;type=3#GameResult" />
+    <Style src="project://database/Assets/Scripts/ScriptsScene1/UIDataVisualizer/DataVisualizer.uss?fileID=7433441132597879392&amp;guid=6170fa6761d8bab49bbfc79c35d10674&amp;type=3#DataVisualizer" />
+    <engine:VisualElement name="root-container" class="root-container">
+        <engine:Label text="Resultados - Simulación 1" class="header-label" />
+        <engine:ScrollView name="results-scroll-view" class="results-scroll-view">
+            <engine:Instance template="GameResult" />
+        </engine:ScrollView>
+        <engine:VisualElement name="button-container" class="button-container" style="flex-grow: 1;">
+            <engine:Button text="Save" name="save-button" class="action-button" />
+            <engine:Button text="Load" name="load-button" class="action-button" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="cursor" enabled="true" style="flex-grow: 1; visibility: visible; flex-basis: auto; position: absolute; width: 16px; height: 16px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; background-color: rgb(255, 42, 58); display: flex;" />
+</engine:UXML>

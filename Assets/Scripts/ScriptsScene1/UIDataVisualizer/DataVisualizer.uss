@@ -1,0 +1,126 @@
+.root-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgb(215, 215, 215);
+    border-radius: 32px;
+}
+
+.header-label {
+    font-size: 32px;
+    -unity-font-style: bold;
+    margin: 10px;
+    padding-left: 5px;
+    color: rgb(50, 50, 50);
+}
+
+.results-scroll-view {
+    height: 80%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 16px;
+    margin: 0 13px;
+}
+
+.button-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.action-button {
+    width: 120px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: rgb(200, 200, 200);
+    border-width: 1px;
+    border-color: rgb(150, 150, 150);
+    border-radius: 3px;
+    font-size: 24px;
+}
+
+.game-result-header {
+    flex-direction: row;
+    justify-content: space-between;
+    -unity-font-style: bold;
+}
+
+.root-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px;
+    flex-grow: 1;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.game-result {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.game-result-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.game-result--expanded .game-result-content {
+    max-height: 500px;
+}
+
+.game-iteration {
+    background-color: rgb(210, 210, 210);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.game-iteration-header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game-iteration-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.game-iteration--expanded .game-iteration-content {
+    max-height: 300px;
+}
+
+.game-selections {
+    background-color: rgb(190, 190, 190);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.selection-sphere {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.selection-good {
+    background-color: rgb(100, 200, 100);
+}
+
+.selection-bad {
+    background-color: rgb(200, 100, 100);
+}
+

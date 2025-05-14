@@ -1,0 +1,44 @@
+.root-container {
+    align-items: center;
+    flex-grow: 1;
+}
+
+.start-button {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 40%;
+    height: 244px;
+}
+
+.background {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    border-bottom-left-radius: 64px;
+}
+
+.data-container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-grow: 1;
+}
+
+.separated-items {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-text {
+    font-size: 92px;
+    -unity-text-align: middle-center;
+}
+
+.instructions {
+}

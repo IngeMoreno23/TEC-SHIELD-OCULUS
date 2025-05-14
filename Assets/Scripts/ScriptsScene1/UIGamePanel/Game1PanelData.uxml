@@ -1,0 +1,30 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/ScriptsScene1/UIGamePanel/Game1Panel.uss?fileID=7433441132597879392&amp;guid=6e3beee288f445b459aa0cc142f86671&amp;type=3#Game1Panel" />
+    <engine:VisualElement name="background" data-source-type="UIGame1Data, Assembly-CSharp" class="background">
+        <engine:VisualElement name="data-container" class="data-container">
+            <engine:VisualElement name="iterations" class="separated-items">
+                <engine:Label text="Iteraciones:" name="iterations-label" class="my-text" />
+                <engine:Label text="Label" data-source-type="GameManager1, Assembly-CSharp" data-source="project://database/Assets/Scripts/ScriptsScene1/UIGamePanel/UIGame1Data.asset?fileID=11400000&amp;guid=f35a1b449ef2b28429d40f7375b6e101&amp;type=2#UIGame1Data" enable-rich-text="true" name="iterations-data" class="my-text">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="currentIterationText" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+            <engine:VisualElement name="selections" class="separated-items" style="flex-grow: 1;">
+                <engine:Label text="Esperas Seleccionadas:" name="selections-label" class="my-text" />
+                <engine:Label text="Label" data-source-type="GameManager1, Assembly-CSharp" data-source="project://database/Assets/Scripts/ScriptsScene1/UIGamePanel/UIGame1Data.asset?fileID=11400000&amp;guid=f35a1b449ef2b28429d40f7375b6e101&amp;type=2#UIGame1Data" enable-rich-text="true" name="selections-data" class="my-text">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="currentSelectedSphereText" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+            <engine:VisualElement name="instructions" class="separated-items instructions" style="flex-grow: 1; justify-content: center;">
+                <engine:Label text="Label" data-source-type="GameManager1, Assembly-CSharp" data-source="project://database/Assets/Scripts/ScriptsScene1/UIGamePanel/UIGame1Data.asset?fileID=11400000&amp;guid=f35a1b449ef2b28429d40f7375b6e101&amp;type=2#UIGame1Data" enable-rich-text="true" name="selections-data" class="my-text">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="instructionsText" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

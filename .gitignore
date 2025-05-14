@@ -1,0 +1,72 @@
+# Este .gitignore está optimizado para proyectos de Unity
+
+# Carpetas generadas por Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Carpetas de respaldo de Asset Meta Data
+/[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D archivos generados
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Builds de Unity3D
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Carpetas de Crashlytics
+crashlytics-build.properties
+
+# Autogenerado por MacOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Archivos específicos de Android/iOS
+*.mobileprovision
+*.keystore
+*.p12
+
+# Archivos de distribución
+/[Bb]uild/
+/[Bb]uilds/
+/[Aa]pp/
+/[Aa]pps/
+
+# Windows archivos de imagen
+Thumbs.db
+Thumbs.db.meta
+
+# Excepciones - archivos que queremos mantener pese a coincidir con patrones anteriores
+!/[Aa]ssets/**/*.meta

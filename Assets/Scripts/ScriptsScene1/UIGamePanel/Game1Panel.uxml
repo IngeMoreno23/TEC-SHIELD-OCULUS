@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/ScriptsScene1/UIGamePanel/Game1Panel.uss?fileID=7433441132597879392&amp;guid=6e3beee288f445b459aa0cc142f86671&amp;type=3#Game1Panel" />
+    <engine:VisualElement name="root-container" class="root-container">
+        <engine:Button text="Start" name="start-button" class="start-button" style="font-size: 138px;" />
+    </engine:VisualElement>
+    <engine:VisualElement name="cursor" enabled="true" style="flex-grow: 1; visibility: visible; flex-basis: auto; position: absolute; width: 16px; height: 16px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; background-color: rgb(255, 42, 58); display: flex;" />
+</engine:UXML>
