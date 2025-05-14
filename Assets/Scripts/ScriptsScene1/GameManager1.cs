@@ -46,6 +46,7 @@ public class GameManager1 : MonoBehaviour
     [Range(1, 5)]
     int m_SimulationRepetitions = 3;
 
+    int m_CurrentIteration = 0; // Current iteration of the simulation
     int m_SelectedSphereCount = 0; // Number of spheres currently being selected by the user in-game
 
     bool IsSelectionCompleted => m_SelectedSphereCount >= m_CorrectSphereCount; // Number of spheres in the simulation
@@ -138,7 +139,17 @@ public class GameManager1 : MonoBehaviour
     void Start()
     {
         m_FadeCamera.RedoFade();
+        m_GameDataSO.maxIterations = m_SimulationRepetitions; // Set the maximum iterations for the game data
+        m_GameDataSO.currentIteration = 0;
+        m_GameDataSO.maxSelectedSpheres = m_CorrectSphereCount; // Set the maximum selected spheres for the game data
+        m_GameDataSO.currentSelectedSpheres = 0;
+    }
 
+
+    private void Update()
+    {
+        m_GameDataSO.currentIteration = m_CurrentIteration;
+        m_GameDataSO.currentSelectedSpheres = m_SelectedSphereCount;
     }
     private void OnDestroy()
     {
@@ -331,13 +342,16 @@ public class GameManager1 : MonoBehaviour
         for (int i = 0; i < m_SimulationRepetitions; i++)
         {
             m_SelectedSphereCount = 0;
-            
+            m_CurrentIteration = i + 1;
+
             //  Call StartSplines to start the splines
+            m_GameDataSO.instructionsText = "";
             StartSplines();
             //  Wait for the simulation time before stopping the splines
             yield return new WaitForSeconds(m_SimulationTime);
             //  Call StopSplines to stop the splines after the simulation time
             PauseSplines();
+            m_GameDataSO.instructionsText = "¡Selecciona las esferas correctas!";
             SetSpheresCanBeSelected(true);
             m_SaveData = true;
             //  Wait for the user to select the spheres
@@ -349,19 +363,10 @@ public class GameManager1 : MonoBehaviour
 
             yield return ShowCurrentSelections(1f);
             m_CurrentSelectedSpheres.Clear();
-            //for (int j = 0; j < m_Spheres.Count; j++)
-            //{
-            //    SelectableSphere1 selectableSphere = m_Spheres[j].GetComponent<SelectableSphere1>();
-            //    if (selectableSphere != null)
-            //    {
-            //        if (selectableSphere.IsSelected)
-            //        {
-            //            selectableSphere.ToggleSelection();
-            //        }
-            //    }
-            //}
+
             yield return new WaitForSeconds(1f);
         }
+        m_GameDataSO.instructionsText = "¡Fin!";
     }
 
     private IEnumerator ShowCurrentSelections(float time)
