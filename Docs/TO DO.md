@@ -21,3 +21,6 @@ En el caso de querer hacer el numero de esferas totales o correctas variables, s
 
 En el MainMenu, reemplazar el script de MainMenuController para que MainMenuController.Play() te lleve a una nueva pantalla para seleccionar escenas, y que cada escena se vea en un botón llamando a una función que contenga `SceneManager.LoadScene()`
 
+# Documento del primer protocolo
+
+https://docs.google.com/document/d/10HOAzAywZyG0yRHxRzOqdhTd_pTXo766YOnigzCaKoY/edit?tab=t.ffqe9h5cz87u
